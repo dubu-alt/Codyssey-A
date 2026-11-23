@@ -1,0 +1,24 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- 데이터 원본 (용량이 크고 재배포 문제가 있음) ---
+# 폴더 자체는 남기고(.gitkeep) 안의 파일만 무시한다
+data/raw/*
+!data/raw/.gitkeep
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+.ipynb_checkpoints/
+
+.DS_Store
+.idea/
+.vscode/
+
+*.db
+*.sqlite3
